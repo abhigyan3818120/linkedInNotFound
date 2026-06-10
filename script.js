@@ -10,7 +10,8 @@ const photos = [
   "kundankk.png",
   "maheshh.png",
   "rds.png",
-  "tt.png"
+  "tt.png",
+  "mokshjee.png"
 ];
 
 let currentIndex = parseInt(localStorage.getItem("imageIndex")) || 0;
