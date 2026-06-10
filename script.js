@@ -5,15 +5,17 @@ const photos = [
   "amitji.png",
   "deepakji.png",
   "jujuji.png",
-  
+  "combine.png",
+  "gyan.png",
+  "kundankk.png",
+  "maheshh.png",
+  "rds.png",
+  "tt.png"
 ];
 
-let previous = localStorage.getItem("lastPhoto");
-let current;
+let currentIndex = parseInt(localStorage.getItem("imageIndex")) || 0;
 
-do {
-  current = photos[Math.floor(Math.random() * photos.length)];
-} while (current === previous && photos.length > 1);
+document.getElementById("batchPhoto").src = photos[currentIndex];
 
-document.getElementById("batchPhoto").src = current;
-localStorage.setItem("lastPhoto", current);
+currentIndex = (currentIndex + 1) % photos.length;
+localStorage.setItem("imageIndex", currentIndex);
