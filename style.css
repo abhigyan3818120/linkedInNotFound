@@ -124,3 +124,12 @@
         line-height:1.5;
         font-family: 'Courier New', monospace;
     }
+.phto{
+    font-size: 10px;
+    color: #fd4242;
+    margin-top: 2px;
+    font-family: 'Exo 2', monospace;
+    text-shadow: 0 0 5px rgba(0,0,0,0.8);
+    text-align: center;
+    font-style: italic;
+}

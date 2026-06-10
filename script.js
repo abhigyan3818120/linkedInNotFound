@@ -1,9 +1,15 @@
 
 const photos = [
   "anshul-tyagi.png",
-  "linkedin.png"
+  "yusuff121.png"
 ];
 
-const randomPhoto = photos[Math.floor(Math.random() * photos.length)];
+let previous = localStorage.getItem("lastPhoto");
+let current;
 
-document.getElementById("batchPhoto").src = randomPhoto;
+do {
+  current = photos[Math.floor(Math.random() * photos.length)];
+} while (current === previous && photos.length > 1);
+
+document.getElementById("batchPhoto").src = current;
+localStorage.setItem("lastPhoto", current);
