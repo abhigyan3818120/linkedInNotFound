@@ -1,7 +1,11 @@
 
 const photos = [
   "anshul-tyagi.png",
-  "yusuff121.png"
+  "yusuff121.png",
+  "amitji.png",
+  "deepakji.png",
+  "jujuji.png",
+  
 ];
 
 let previous = localStorage.getItem("lastPhoto");
